@@ -1,0 +1,476 @@
+/* estilos de la seccion incio */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+:root{
+    --variable-color: rgb(238, 52, 123);
+    --variable-color2: rgb(187, 150, 187)
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* esta parte del estilo puse una imagen de fondo de mi pagina con URL y usando LINEAR-GRADIENT me permite hacer un degradado de la misma 
+con BACKGROUND-SIZE: COVER la imgane icluida cubre el total del fondo */
+#inicio{
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    
+}
+
+#inicio .contenido header{
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    
+}
+#inicio .contenido header .contenido-header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+#inicio .contenido header .contenido-header h1{
+    text-align: center;
+    color: var(--variable-color);
+}
+#inicio .contenido header .contenido-header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+#inicio .contenido header .contenido-header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 12px;
+    font-weight: 400;
+}
+#inicio .contenido header .contenido-header nav ul li a:hover{
+    color: var(--variable-color);
+}
+#inicio .contenido header .contenido-header .redes a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+    transition: .5s;
+}
+#inicio .contenido header .contenido-header .redes a:hover{
+    color: var(--variable-color);
+}
+#inicio .precentacion{
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+#inicio .precentacion .bienvenida{
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+#inicio .precentacion h2{
+    font-size: 55px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+#inicio .precentacion  h2 span{
+    font-size: 25px;
+    color: var(--variable-color);
+}
+#inicio .precentacion .descricion{
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 18px;
+    text-align: center;
+}
+#icono-nav{
+    color:#fff;
+    display: none;
+}
+
+/* EStilos section SOBREMI */
+#sobremi{
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    padding: 100px 15px;
+    color: black;
+    display: flex;
+
+
+}
+#sobremi .contenido-foto{
+    max-width: 400px;
+    margin-right: 80px;
+}
+#sobremi .contenido-foto img{
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    color: #fff;
+}
+#sobremi .sobremi{
+    padding: 0 20px;
+}
+#sobremi .sobremi .seccion-titulo{
+    font-size: 25px;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #fff;
+    text-decoration-thickness: 5px;
+}
+#sobremi .sobremi h2{
+    font-size: 38px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+#sobremi .sobremi h2 span{
+    color: var(--variable-color);
+}
+#sobremi .sobremi h3{
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+#sobremi .sobremi p{
+    font-size: 15px;
+    line-height: 25px;
+    color: rgb(66, 66, 66);
+    margin-bottom: 12px;
+}
+#sobremi .sobremi a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border-radius: 30px;
+    padding: 10px;
+    border: 1px solid black;
+    margin-top: 10px;
+    transition: .5s;
+}
+#sobremi .sobremi a:hover{
+    background-color: var(--variable-color);
+    color: #fff;
+}
+/* SECTION SKILLS */
+.contenedor-skills{
+    background:linear-gradient(var(--variable-color),rgba(0, 0, 0, .4)), url(../fondo-skills.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 0;
+    text-align: center;
+   
+}
+.contenedor-skills .skill{
+    max-width: 1100px;
+    width: 80%;
+    margin: 30px auto;
+}
+.contenedor-skills h3{
+    color: #fff;
+    font-size: 23px;
+}
+.contenedor-skills .skill .info{
+    display: flex;
+    justify-content:space-between;
+    color: white;
+
+}
+.contenedor-skills .skill .info p{
+    font-size: 15px;
+}
+.contenedor-skills .skill .lista{
+    display: inline-block;
+    margin-right: 20px;
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+}
+.contenedor-skills .skill .barra .carga-html{
+    background-color: var(--variable-color2);
+    width: 80%;
+    height: 6px;
+    margin: 10px 0;
+    animation: carga1 2s forwards;
+}
+@keyframes carga1 {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+.contenedor-skills .skill .barra .carga-javascript{
+    background-color: var(--variable-color2);
+    width: 60%;
+    height: 6px;
+    margin: 10px 0;
+    animation: carga2 2s forwards;
+}
+@keyframes carga2 {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+.contenedor-skills .skill .barra .carga-python{
+    background-color: var(--variable-color2);
+    width: 80%;
+    height: 6px;
+    margin: 10px 0;
+    animation: carga3 2s forwards;
+}
+@keyframes carga3 {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+/* SECTION CONTACTO */
+
+
+.formulario-contactos .formulario{
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    padding: 20px 35px;
+    margin-top: 10px;
+    padding-bottom: 30px;
+    border-bottom: 3px;
+}
+.formulario-contactos .formulario .titulo-contactos{
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    text-align: center;
+}
+.formulario-contactos .formulario .titulo-contactos span{
+    font-size: 30px;
+}
+.formulario-contactos .formulario .form-label{
+    padding: 5px;
+    display: block;
+    color: black;
+    font-size: 20px;
+    position: relative;
+}
+.formulario-contactos .formulario .form-input{
+    border: none;
+    border-bottom:3px solid var(--variable-color2);
+    width: 68%;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 30px;
+    font-size: 14px;
+
+}
+.formulario-contactos .formulario .form-texarea{
+    border: none;
+    border-bottom:3px solid var(--variable-color2);
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+.formulario-contactos .formulario .btn-submit{
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    width: 120px;
+    margin: auto;
+    border: 1px solid var(--variable-color2);
+    cursor: pointer;
+    transition: .5s;
+    padding: 10px 15px;
+    border-radius: 12px;
+    text-align:center;
+}
+.formulario-contactos .formulario .btn-submit:hover{
+    background-color: var(--variable-color);
+    color: #fff;
+}
+/* SECTION PORFOLIO */
+#porfolio{
+    max-width:1400px;
+    width:100% ;
+    padding: 100px 0px;
+    margin: auto;
+}
+#porfolio h3{
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    text-align: center;
+}
+#porfolio .fila{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+#porfolio .fila .trabajo{
+    max-width: 450px;
+    border: 1px solid black;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+#porfolio .fila .trabajo img{
+    width: 100%;
+    height: 100%;
+    filter:grayscale(1);
+    object-fit: cover;
+    transition: 0.5s;
+}
+#porfolio .fila .trabajo img:hover{
+    filter: grayscale(0);
+}
+/* cartel de infomacion opaco oculto */
+#porfolio .fila .trabajo .info{
+    position: absolute;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    color: var(--variable-color);
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: 0.5s;
+}
+/* con el hover aparece el cartel de infomacion */
+#porfolio .fila .trabajo:hover .info{
+    opacity: 1;
+    bottom: 0;
+}
+/* FOOTER*/
+footer{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin: 60px 0 0 0;
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    margin: 5px;
+}
+/* SECTION RESPONSIVE */    
+@media  screen and (max-width:800px) {
+    #inicio{
+        height: 50rem;
+    }
+    .redes{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    #inicio .precentacion p{
+        font-size: 16px;
+    }
+    #inicio .precentacion h2{
+        display: block;
+        font-size: 28px;
+    }
+    #inicio .precentacion h2 span{
+        font-size: 20px;
+    }
+    #inicio .contenido .precentacion .descricion{
+        font-size: 16px;
+    }
+    #sobremi {
+        display: block;
+        padding: 50px 0;
+    }
+    #sobremi .contenido-foto{
+        max-width: 200px;
+        margin: auto;
+    }
+    #sobremi .contenido-foto img{
+        padding: 8px;
+    }
+    #sobremi .sobremi .seccion-titulo{
+        text-align: center;
+        font-size: 20px;
+    }
+    #sobremi .sobremi h2{
+        font-size: 16px;
+        text-align: center;
+    }
+    #sobremi .sobremi{
+        text-align: center;
+    }
+    .contenedor-skills{
+        padding: 50px 20px;
+    }
+    .contenedor-skills h3{
+        font-size: 20px;
+    }
+    #porfolio{
+        padding: 50px 0;
+    }
+    #porfolio h3{
+        font-size: 20px;
+    }
+    #porfolio .fila{
+        display: block;
+        padding: 10px 0;
+    }
+    #porfolio .fila .trabajo{
+        margin:10px auto;
+    }
+    #contacto .formulario-contactos .formulario-header h3{
+        font-size: 20px;
+    }
+    #contacto .formulario-contactos .formulario label{
+        font-size: 16px;
+    }
+    footer{
+        padding: 5px;
+    }
+    footer .redes{
+        display: block;
+        
+    }
+}
