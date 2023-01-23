@@ -112,7 +112,7 @@ con BACKGROUND-SIZE: COVER la imgane icluida cubre el total del fondo */
 
 /* EStilos section SOBREMI */
 #sobremi{
-    max-width: 1300px;
+    max-width: 1400px;
     width: 100%;
     margin: auto;
     padding: 100px 15px;
@@ -126,14 +126,14 @@ con BACKGROUND-SIZE: COVER la imgane icluida cubre el total del fondo */
     margin-right: 80px;
 }
 #sobremi .contenido-foto img{
-    padding: 5px;
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
+    padding: 20px;
+    width: 120%;
+    height: 80%;
+    border-radius: 10%;
     color: #fff;
 }
 #sobremi .sobremi{
-    padding: 0 20px;
+    padding: 40px 20px;
 }
 #sobremi .sobremi .seccion-titulo{
     font-size: 25px;
@@ -162,8 +162,9 @@ con BACKGROUND-SIZE: COVER la imgane icluida cubre el total del fondo */
 #sobremi .sobremi p{
     font-size: 15px;
     line-height: 25px;
-    color: rgb(66, 66, 66);
+    color: black;
     margin-bottom: 12px;
+    font-weight: bold;
 }
 #sobremi .sobremi a{
     display: inline-block;
